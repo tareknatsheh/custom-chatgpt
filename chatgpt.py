@@ -9,7 +9,7 @@ os.environ["OPENAI_API_KEY"] = constants.OPENAI_API_KEY
 query = sys.argv[1]
 
 
-loader = TextLoader("data.txt")
+loader = TextLoader("plant-mars-article.txt")
 # loader.load()
 index = VectorstoreIndexCreator().from_loaders([loader])
 
